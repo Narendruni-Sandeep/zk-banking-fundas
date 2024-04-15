@@ -1,0 +1,143 @@
+/* CSS for the slideshow */
+.slideshow-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+/* CSS for the active slide */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Other CSS styles for the page */
+.bankingfundas {
+    margin-left: 30px;
+    color: azure;
+    font-size: 30px;
+}
+
+.logo {
+    margin-top: 20px;
+    text-align: right;
+    width: 25%;
+}
+
+.heading {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.container {
+    background-color: black;
+    padding-bottom: 0px;
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+}
+
+hr {
+    height: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: greenyellow;
+}
+
+.list {
+    display: none;
+    color: aliceblue;
+}
+
+.bankbutton {
+    margin-left: 15px;
+}
+
+.banklist {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flexbox;
+    cursor: pointer;
+}
+
+.maintext {
+    font-size: 50px;
+    margin-left: 45px;
+    color: aliceblue;
+}
+
+.headtext {
+    overflow: hidden;
+    margin-left: 295px;
+    display: inline;
+}
+
+.bottom {
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+}
+
+.hdfc,
+.axis,
+.bajaj,
+.kotak,
+.sbi,
+.boi {
+    background-color: red;
+    color: aliceblue;
+    border: none;
+}
+
+/* CSS for the loan information */
+.loanInfo {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.loanInfo h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.loanInfo p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Increase font size for BANKING FUNDAS */
+.bfname {
+    font-size: 30px;
+}
+.line{
+	background-color: green;
+	height: 2px;
+	margin-left: 5px;
+	margine-right: 5px;
+}
