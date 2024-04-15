@@ -1,0 +1,50 @@
+// Function to initialize slideshow
+function initializeSlideshow() {
+    const slides = document.querySelectorAll(".slide");
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+}
+
+// Function to show loan information for a specific bank
+function showLoanInfo(loanElement) {
+    const slideshowContainer = document.querySelector(".slideshow-container");
+    const loanInfo = document.querySelector(".loanInfo");
+    slideshowContainer.style.display = "none"; // Hide slideshow container
+    loanInfo.innerHTML = ""; // Clear any previous loan information
+    loanInfo.appendChild(loanElement.cloneNode(true)); // Append the selected bank's loan information
+    loanInfo.style.display = "block"; // Show bank loan information
+}
+
+// Add event listener for the "Banks" button to show bank list
+const bankListBtn = document.querySelector(".banklist");
+bankListBtn.addEventListener("click", function () {
+    const bankList = document.querySelector(".list");
+    if (bankList.style.display === "none") {
+        bankList.style.display = "block";
+    } else {
+        bankList.style.display = "none";
+    }
+});
+
+// Add event listeners for bank buttons
+const bankButtons = document.querySelectorAll(".hdfc, .axis"); // Add other bank buttons here
+bankButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        showLoanInfo(document.querySelector("." + button.classList[0] + "Loan"));
+    });
+});
+
+// Initialize slideshow
+initializeSlideshow();
