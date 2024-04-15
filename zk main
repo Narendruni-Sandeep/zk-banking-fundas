@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window title="Banking Fundas" border="normal" width="100%" apply="org.zkoss.bind.BindComposer">
+        <include src="banking_fundas_content.zul"/>
+    </window>
+</zk>
