@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <style src="style.css"/>
+    <script src="script.js"/>
+    <div class="container">
+        <div class="heading">
+            <div class="blogo">
+                <image src="blogo.jpg" width="30%"/>
+            </div>
+            <div class="bankingfundas">
+                <label class="bfname" value="BANKING FUNDAS"/>
+            </div>
+            <div class="logo">
+                <image src="pennantlogo.jpg" width="50%"/>
+            </div>
+        </div>
+        <separator width="100%" bar="true" class="line" />
+        <div class="bottom">
+        	<vlayout>
+                <button class="banklist" label="Banks"/>
+                <listbox class="list" mold="select" style="display:none;">
+                    <listitem>
+                        <listcell>
+                            <button class="hdfc" label="HDFC"/>
+                        </listcell>
+                    </listitem>
+                    <listitem>
+                        <listcell>
+                            <button class="axis" label="AXIS"/>
+                        </listcell>
+                    </listitem>
+                    <!-- Add list items for other banks -->
+                </listbox>
+            </vlayout>
+            <div class="headtext">
+                <label class="maintext" value="Comparing loans made easy"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container slideshow">
+        <div class="slideshow">
+            <div class="slide fade">
+                <image src="bank1.jpg" width="100%"/>
+            </div> 
+            <div class="slide fade">
+                <image src="bank2.jpg" width="100%"/>
+            </div>
+            <!-- Add more slides if needed -->
+        </div>
+    </div>
+
+    <div class="loanInfo slideshow" style="display: none;">
+        <!-- Placeholder for HDFC loan information -->
+        <div class="hdfcLoan slide fade">
+            <label value="HDFC Loans"/>
+            <label value="Loan 1 information goes here"/>
+            <label value="Loan 2 information goes here"/>
+            <!-- Add more loan information for HDFC -->
+        </div>
+
+        <!-- Placeholder for AXIS loan information -->
+        <div class="axisLoan slide fade">
+            <label value="AXIS Loans"/>
+            <label value="Loan 1 information goes here"/>
+            <label value="Loan 2 information goes here"/>
+            <!-- Add more loan information for AXIS -->
+        </div>
+
+        <!-- Add placeholders for other banks -->
+    </div>
+</zk>
