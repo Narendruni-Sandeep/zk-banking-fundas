@@ -1,0 +1,55 @@
+<?page title="types of banks" contentType="text/html"?>
+<zk>
+    <style src="test.css"/>
+    
+    <div class="header">
+        <div><image src="banking.png" /></div>
+        <div><label class="label" value="BANKING FUNDAS" /></div>
+        <div><image src="pennant.jpg" /></div>
+    </div>
+
+    <div class="lower" style="display: flex">
+        <div class="dropdown">
+            <menubar class="menubar" hflex="min" style="width: 100%; margin-top: 50px; margin-left:30px; margin-right:50px; border: 1px solid #D8D8D8">
+                <menu label="TYPES OF BANKS">
+                    <menupopup>
+                        <menuitem label="AXIS" onClick='update(1)' image="axis.png" />
+                        <menuitem label="HDFC" onClick='update(2)' image="hdfc.png"/>
+                        <menuitem label="SBI" onClick='update(3)' image="sbi.jpg"/>
+                        <menuitem label="BAJAJ FINANCE" onClick='update(4)' image="bajaj.jpg"/>
+                        <menuitem label="KOTAK" onClick='update(5)' image="kotak.png"/>
+                    </menupopup>
+                </menu>
+            </menubar>
+        </div>
+        <div class="imp">
+         <include src="scroll.zul"  id="area"></include>
+        </div>
+    </div>
+    <zscript>
+     <![CDATA[
+    void update(int bno){
+    if(bno==1){
+    area.setSrc("");
+    area.setSrc("axis.zul");
+    	}
+    else if(bno==2){
+    area.setSrc("");
+    area.setSrc("hdfc.zul");
+    	}
+    else if(bno==3){
+   	 area.setSrc("");
+   	 area.setSrc("sbi.zul");
+   		}
+    else if(bno==4){
+   	 area.setSrc("");
+   	 area.setSrc("bajaj.zul");
+   		}
+    else if(bno==5){
+   	 area.setSrc("");
+   	 area.setSrc("kotak.zul");
+   		}
+    }
+    ]]>
+    </zscript>
+</zk>

@@ -1,0 +1,61 @@
+<zk>
+<hbox>
+<listbox id="carListbox" emptyMessage="No car found in the result" >
+    <listhead>
+        <listheader label="TYPES" />
+        <listheader label="INTREST" />
+    </listhead>
+    <listitem>
+        <listcell label="HOME LOAN"></listcell>
+        <listcell label="9.15%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="PERSONAL LOAN"></listcell>
+        <listcell label="12.30%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="STUDENT LOAN"></listcell>
+        <listcell label="9.15%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="BUSSINESS LOAN"></listcell>
+        <listcell label="11%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="CAR LOAN"></listcell>
+        <listcell label="8.40%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="TWO WHEELER LOAN"></listcell>
+        <listcell label="13%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="SUPER BIKE LOAN"></listcell>
+        <listcell label="9.55%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="EV CAR LOAN"></listcell>
+        <listcell label="8.75%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="GOLD LOAN"></listcell>
+        <listcell label="FLOATING"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="LOAN AGAINST FIXED DEPOSIT"></listcell>
+        <listcell label="7%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="LOAN AGAINST PROPERTY"></listcell>
+        <listcell label="10%"></listcell>
+    </listitem>
+    <listitem>
+        <listcell label="LOAN AGAINST SECURITIES"></listcell>
+        <listcell label="9.75%"></listcell>
+    </listitem>
+</listbox>
+</hbox>
+<hbox style="margin-top : 30px; margin-left :450px;" >
+<label style="color:red">BEST OPTION : LOAN AGAINST FIXED DEPOSIT WITH 7%</label>
+</hbox>
+</zk>

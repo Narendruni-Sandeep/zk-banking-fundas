@@ -1,0 +1,20 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<script>
+        zk.afterMount(function() {
+            var images = ["axis.png", "hdfc.png", "sbi.jpg", "bajaj.jpg", "kotak.png"];
+            var cur_index = 0;
+            var slideshow = zk.Widget.$('$slideshow');
+
+            function nextImg() {
+                slideshow.setSrc(images[cur_index]);
+                cur_index = (cur_index + 1) % images.length;
+            }
+            setInterval(nextImg, 2000);
+           
+        });
+    </script>
+    <div class="imp">
+        <image width="1218px" height="635px" id="slideshow" class="slideshow"></image>
+        </div>
+</zk>
